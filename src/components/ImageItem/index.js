@@ -9,8 +9,13 @@ const ImageItem = props => {
 
   return (
     <li>
-      <button onClick={imageClicked} type="button" className="img-btn-css">
-        <img src={thumbnailUrl} alt="item-img" className="thumbnail-img" />
+      <button type="button" className="img-btn-css">
+        <img
+          src={thumbnailUrl}
+          alt="item-img"
+          className="thumbnail-img"
+          onClick={imageClicked}
+        />
       </button>
     </li>
   )
