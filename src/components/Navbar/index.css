@@ -1,0 +1,43 @@
+.navbar-container {
+  display: flex;
+  background-color: #2c0e3a;
+  height: 12%;
+  justify-content: space-between;
+  padding-left: 70px;
+  padding-right: 70px;
+  align-items: center;
+}
+.website-logo {
+  width: 120px;
+  height: 35px;
+}
+.score-p {
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Roboto';
+  padding-right: 25px;
+}
+.score {
+  color: #fec653;
+  font-size: 16px;
+  padding-top: 3px;
+}
+.time-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.seconds {
+  font-size: 14px;
+  color: #fec653;
+}
+.timer-img {
+  width: 26px;
+  height: 20px;
+  padding-right: 10px;
+  padding-left: 0px;
+}
+.score-container {
+  display: flex;
+  justify-content: space-around;
+}

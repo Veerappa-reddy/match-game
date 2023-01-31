@@ -1,0 +1,15 @@
+.tab-container {
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center; */
+}
+.tab-btn {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #000;
+  color: #fff;
+}
+.active-btn {
+  border-bottom: 1px solid #fec653;
+  color: #fec653;
+}
