@@ -95,13 +95,13 @@ class MatchGame extends Component {
     return (
       <div>
         <div className="random-image-container">
-          <img src={gameImg} alt="random" className="random-image" />
+          <img src={gameImg} alt="match" className="random-image" />
         </div>
         <ul className="tabs-container">
           {tabsList.map(eachTab => (
             <TabItem
               tabDetails={eachTab}
-              //   key={eachTab.tabId}
+              key={eachTab.tabId}
               selectTab={this.selectTab}
               isActive={activeTabId === eachTab.tabId}
             />
@@ -139,7 +139,10 @@ class MatchGame extends Component {
   getInterval = () => {
     const {timer} = this.state
     if (timer === 0) {
-      this.setState({timer: 60, isGameOver: true})
+      clearInterval(this.intervalId)
+      this.setState({isGameOver: true})
+
+      //   this.playAgain()
     } else {
       this.setState(prevState => ({timer: prevState.timer - 1}))
     }

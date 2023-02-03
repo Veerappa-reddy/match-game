@@ -12,7 +12,7 @@ const ImageItem = props => {
       <button type="button" className="img-btn-css">
         <img
           src={thumbnailUrl}
-          alt="item-img"
+          alt="thumbnail"
           className="thumbnail-img"
           onClick={imageClicked}
         />
